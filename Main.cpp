@@ -17,7 +17,7 @@ enum class Another
 
 Result DoWork()
 {
-	return Result::SUCCESS;
+	return Result::ERROR_WRITE;
 }
 
 enum Alphabet
