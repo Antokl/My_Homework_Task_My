@@ -1,43 +1,16 @@
 
 #include <iostream>
+#include <string>
 
-enum class Result
-{
-	SUCCESS,
-	FAIL,
-	ERROR_WRITE,
-	ERROR_READ
-};
 
-enum class Another
+struct Student
 {
-	WORK,
-	SUCCESS
-};
-
-Result DoWork()
-{
-	return Result::ERROR_WRITE;
-}
-
-enum Alphabet
-{
-	A,
-	B,
-	C
+	int Age;
+	int Height;
+	std::string Name;
 };
 
 int main()
 {
-	Result workResult = DoWork();
-	std::cout << static_cast<int>(workResult);
-	if (workResult == Result::SUCCESS)
-	{
-
-	}
-	Another anotherRes = Another::WORK;
-	//if (workResult == anotherRes)
-	{
-
-	}
+	Student* ptr = new Student{ 10, 160, "Paul" };
 }
